@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar sesión</title>
+  <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Muli', sans-serif;
+      margin: 0;
+    }
+
+    .header {
+      align-items: center;
+      background-color: #230A59;
+      display: flex;
+      justify-content: space-between;
+      height: 80px;
+      width: 100%;
+    }
+
+    .header__img {
+      width: 200px;
+      margin-left: 1rem;
+    }
+
+    .header__menu {
+      margin-right: 2rem;
+    }
+
+    .header__menu ul {
+      display: none;
+      list-style: none;
+      margin: 0;
+      padding: 0px;
+      position: absolute;
+      text-align: right;
+      width: 100px;
+    }
+
+    .header__menu:hover ul, ul:hover {
+      display: block;
+    }
+
+    .header__menu li {
+      margin: 1rem 0;
+    }
+
+    .header__menu li a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .header__menu li a:hover {
+      text-decoration: underline;
+    }
+
+    .header__menu--profile {
+      align-items: center;
+      display: flex;
+    }
+
+    .header__menu--profile img {
+      height: 50px;
+      margin-right: 0.5rem;
+      width: 50px;
+    }
+
+    .header__menu--profile p {
+      color: #ffffff;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <img src="./img/logo-platzi-video.png" alt="Platzi video" class="header__img" />
+    <div class="header__menu">
+      <div class="header__menu--profile">
+        <img src="./img/user.png" alt="User" />
+        <p>Perfil</p>
+      </div>
+      <ul>
+        <li><a href="/">Cuenta</a></li>
+        <li><a href="/">Cerrar Sesión</a></li>
+      </ul>
+    </div>
+  </header>
+  <section class="login">
+    <section class="login__container">
+      <h2>Inicia Sesión</h2>
+      <form class="login__container--form">
+        <input class="input" placeholder="Correo" type="text" />
+        <input class="input" placeholder="Contraseña" type="password" />
+        <button class="button">
+          Iniciar sesión
+        </button>
+        <div class="login__container-remember-me">
+          <label>
+            <input type="checkbox" name="" id="remember" value="checkbox" /> Recúerdame
+          </label>
+          <a href="/">Olvidé mi contraseña</a>
+        </div>
+      </form>
+      <section class="login__container--social-media">
+        <div>
+          <img src="./img/google.png" alt="Google"/>Inicia sesión con Google
+        </div>
+        <div>
+          <img src="./img/twitter.png" alt="Google"/>Inicia sesión con Twitter
+        </div>
+      </section>
+      <p class="login__container--register">¿No tienes ninguna cuenta?<a href="/">Registrate</a></p>
+    </section>
+  </section>
+  <footer class="footer">
+    <a href="/">Términos de uso</a>
+    <a href="/">Declaración de privacidad</a>
+    <a href="/">Centro de ayuda</a>
+  </footer>
+</body>
+</html>
