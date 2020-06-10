@@ -1,2 +1,2 @@
 # platzi-video
-Project for front-end developer couser
+Project for front-end developer course
