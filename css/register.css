@@ -21,9 +21,9 @@ body {
 }
 
 /**
-* Login styles
+* Register styles
 */
-.login {
+.register {
   align-items: center;
   background: linear-gradient(#230A59, #3E38F2);
   display: flex;
@@ -33,12 +33,12 @@ body {
   padding: 0 2rem;
 }
 
-.login__container {
-  background-color: rgba(255, 255, 255, 0.1);
+.register__container {
+  align-items: center;
   border: 2px solid #ffffff;
   border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
   display: flex;
-  color: #ffffff;
   flex-direction: column;
   justify-content: space-around;
   min-height: 515px;
@@ -46,62 +46,19 @@ body {
   width: 300px;
 }
 
-.login__container--form {
+.register__container--title {
+  text-align: start;
+  width: 100%;
+}
+
+.register__container--title h2 {
+  color: #ffffff;
+}
+
+.register__container--form {
   display: flex;
   flex-direction: column;
-}
-
-.login__container--form label {
-  font-size: 1rem;
-}
-
-.login__container--remember-me {
-  color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 0.75rem;
-}
-
-.login__container--remember-me a {
-  color: #ffffff;
-  font-size: 1rem;
-  text-decoration: none;
-}
-
-.login__container--remember-me a:hover {
-  text-decoration: underline;
-}
-
-.login__container--social-media {
-  margin-top: 1rem;
-}
-
-.login__container--social-media > div {
-  align-items: center;
-  display: flex;
-  font-size: 1rem;
-  margin-bottom: 0.75rem;
-}
-
-.login__container--social-media > div > img {
-  margin-right: 0.75rem;
-  width: 30px;
-}
-
-.login__container--register {
-  font-size: 1rem;
-}
-
-
-.login__container--register a {
-  color: #ffffff;
-  font-size: 1.1rem;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.login__container--register a:hover {
-  text-decoration: underline;
+  width: 100%;
 }
 
 .input {
@@ -136,6 +93,17 @@ body {
   margin: 0.75rem 0;
 }
 
+.register__container--login {
+  color: #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register__container--login:hover {
+  text-decoration: underline;
+}
+
 .footer {
   align-items: center;
   background: #3E38F2;
@@ -154,18 +122,4 @@ body {
 
 .footer a:hover {
   text-decoration: underline;
-}
-
-@media only screen and (max-width: 600px) {
-  .login__container {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    width: 100%;
-  }
-
-  .footer {
-    align-items: flex-start;
-    flex-direction: column;
-  }
 }
