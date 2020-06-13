@@ -9,17 +9,17 @@
 </head>
 <body>
   <header class="header">
-    <img src="../img/logo-platzi-video.png" alt="Platzi video" class="header__img" />
+    <img src="../img/logo-platzi-video.png" alt="Platzi video" class="header__img" tabindex="0" />
   </header>
   <section class="register">
     <section class="register__container">
       <div class="register__container--title">
-        <h2>Regístrate</h2>
+        <h2 tabindex="0">Regístrate</h2>
       </div>
       <form class="register__container--form">
-        <input class="input" placeholder="Nombre" type="text" />
-        <input class="input" placeholder="Correo" type="email" />
-        <input class="input" placeholder="Contraseña" type="password" />
+        <input class="input" placeholder="Nombre" type="text" aria-label="Nombre" />
+        <input class="input" placeholder="Correo" type="email" aria-label="Correo" />
+        <input class="input" placeholder="Contraseña" type="password" aria-label="Contraseña" />
         <button class="button">Registrarme</button>
       </form>
       <a href="./login.html" class="register__container--login">Iniciar sesión</a>
